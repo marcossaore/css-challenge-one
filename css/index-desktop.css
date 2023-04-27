@@ -1,0 +1,134 @@
+@media (min-width: 1025px) {
+    main {
+        margin: 0 auto;
+        max-width: 102.4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "hero login";
+        align-items: center;
+        justify-items: stretch;
+    }
+
+    .section-hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas: "hero-img";
+    }
+
+    
+    .section-hero .hero-img {
+        grid-area: hero-img;
+        height: 100%;
+        width: 100%;
+        filter: brightness(0.4);
+    }
+
+    .section-hero .hero-info {
+        grid-area: hero-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        z-index: 1;
+        padding: 4rem;
+    }
+
+    .section-hero .hero-title {
+        color: var(--white-1);
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        font-size: 3.5rem;
+    }
+
+    .section-hero .hero-praise {
+        margin-top: var(--spacing-xsmall);
+        color: var(--white-1);
+        font-size: 1.5rem;
+        text-align: left;
+        opacity: 0.8;
+    }
+
+    .section-hero .hero-rights  {
+        grid-area: hero-img;
+        align-self: flex-end;
+        justify-self: center;
+        z-index: 1;
+        margin-bottom: 2rem;
+    }
+
+    .section-login {
+        grid-area: login;
+        padding: 4rem;
+    }
+  }
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "hero login";
+        align-items: center;
+        justify-items: stretch;
+    }
+
+    .section-hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas: "hero-img";
+    }
+
+    
+    .section-hero .hero-img {
+        grid-area: hero-img;
+        height: 100%;
+        width: 100%;
+        filter: brightness(0.4);
+    }
+
+    .section-hero .hero-info {
+        grid-area: hero-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        z-index: 1;
+        padding: 4rem;
+    }
+
+    .section-hero .hero-title {
+        color: var(--white-1);
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        font-size: 3.5rem;
+    }
+
+    .section-hero .hero-praise {
+        margin-top: var(--spacing-xsmall);
+        color: var(--white-1);
+        font-size: 1.5rem;
+        text-align: left;
+        opacity: 0.8;
+    }
+
+    .section-hero .hero-rights  {
+        grid-area: hero-img;
+        align-self: flex-end;
+        justify-self: center;
+        z-index: 1;
+        margin-bottom: 2rem;
+    }
+
+    .section-login {
+        grid-area: login;
+        padding: 4rem;
+    }
+}

@@ -1,0 +1,63 @@
+main {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: var(--spacing-medium);
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-hero {
+    display: none;
+}
+
+.section-login {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.section-login .logo {
+    height: 80%;
+    width: auto;
+    margin: 4rem auto;
+}
+
+.section-login__forgot {
+    text-align: right;
+    margin-top: var(--spacing-xsmall);
+}
+
+.section-login__forgot a {
+    color: var(--primary-color);
+    border:none;
+}
+
+.section-login [type="submit"] {
+    margin-top: 4rem;
+}
+
+.section-login__sign-up {
+    margin: 0.8rem auto 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "s-hero s-login";
+    }
+
+    .section-hero {
+        grid-area: "s-hero";
+    }
+
+    .section-login {
+        grid-area: "s-login";
+    }
+}
